@@ -22,13 +22,13 @@ yii2使用migration备份和还原数据库，最初只想做一个在命令行�
 运行
 
 ```
-composer require jianyan/yii2-console-migration "@dev"
+composer require jianyan74/yii2-console-migration "@dev"
 ```
 
 或者添加
 
 ```
-"jianyan/yii2-console-migration": "*"
+"jianyan74/yii2-console-migration": "*"
 ```
 
 到 `composer.json` 文件的对应地方.
