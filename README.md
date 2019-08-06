@@ -1,3 +1,7 @@
+
+由于 [e282486518/yii2-console-migration](https://github.com/e282486518/yii2-console-migration) 不怎么维护 所以建立该项目
+
+
 注意：如果你使用的是php7.2，那么yii必须使用v2.0.15.1以上，因为yii2核心类Object和php7.2的保留类Object冲突。
 
 ```php

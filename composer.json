@@ -1,12 +1,12 @@
 {
-    "name": "jianyan/yii2-console-migration",
+    "name": "jianyan74/yii2-console-migration",
     "description": "yii2命令行中使用migration备份和还原数据库",
     "type": "yii2-extension",
     "keywords": ["yii2","console","migration"],
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "jianyan"
+            "name": "jianyan74"
         }
     ],
     "minimum-stability": "stable",
