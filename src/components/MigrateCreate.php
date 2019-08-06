@@ -186,7 +186,7 @@ class MigrateCreate extends BaseObject
      */
     public function generateTableData($table)
     {
-        $tableSchema = \Yii::$app->db->getTableSchema($table);
+        $tableSchema = Yii::$app->db->getTableSchema($table);
         $data = Yii::$app->db->createCommand('SELECT * FROM `' . $table . '`')->queryAll();
         //$array = [];
         if (is_array($data)) {
@@ -197,7 +197,7 @@ class MigrateCreate extends BaseObject
                     /* 注意：addslashes会将null转化为'' */
                     if (is_null($row[$column->name])) {
                         $out .= "'" . $column->name . "'=>NULL,";
-                    } elseif ($this->is_serialized($row[$column->name])) {
+                    } elseif ($this->is_serialized($row[$column->name]) || $column->type == 'json') {
                         /* 序列化的内容被addslashes就不能反序列化了 */
                         $out .= "'" . $column->name . "'=>'" . $row[$column->name] . "',";
                     } else {
